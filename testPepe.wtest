@@ -30,4 +30,18 @@ describe "Sueldo Pepe" {
 		pepe.faltas(1)
 		assert.equals(23000, pepe.sueldo())
 	}
+	test "Test 5"{
+		pepe.categoria(medioTiempo)
+		pepe.bonoResultado(porcentaje)
+		pepe.bonoPresentismo(demagogico)
+		pepe.faltas(1)
+		
+		roque.bonoResultado(montoFijo)
+		ernesto.compañero(pepe)
+		ernesto.bonoPresentismo(ajuste)
+
+		assert.equals(11500, pepe.sueldo())
+		assert.equals(37800, roque.sueldo())
+		assert.equals(10100, ernesto.sueldo())
+	}
 }
